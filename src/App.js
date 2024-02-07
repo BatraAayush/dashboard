@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from "react-redux";
+import AddEmployee from "./components/AddEmployee/AddEmployee";
+import EmployeesList from "./components/EmployeesList/EmployeesList";
+import "./styles/App.css";
+import EmployeeChart from "./components/EmployeesChart/EmployeesChart";
+import Navbar from "./components/Navbar/Navbar";
+import { Route, Routes } from "react-router";
+import Home from "./pages/Home/Home";
+import Graphs from "./pages/Graphs/Graphs";
 
 function App() {
+  const employees = useSelector((state) => state.dashboardReducer.employees);
+  const noOfEmployees = employees.length;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/graphs" element={<Graphs />}/>
+      </Routes>
     </div>
   );
 }

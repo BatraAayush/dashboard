@@ -1,0 +1,11 @@
+.home {
+  width: 40%;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .home {
+    margin-left: 4rem;
+    width: 60%;
+  }
+}/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,48 @@
+@import "../../../styles/common";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  background-color: $bg-color;
+  color: white;
+  a {
+    margin-left: 5rem;
+    text-decoration: none;
+    border: none;
+    color: white;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+}
+
+//mobile css
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+
+    strong {
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+}

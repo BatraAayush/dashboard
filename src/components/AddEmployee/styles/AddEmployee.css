@@ -1,0 +1,31 @@
+.add-employee .add-btn {
+  width: max-content;
+  height: max-content;
+  border: 1px solid #59B4C3;
+  background-color: #59B4C3;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.add-employee .add-btn:hover {
+  background-color: white;
+  color: #59B4C3;
+}
+.add-employee .add-form {
+  margin: 1rem 0;
+}
+.add-employee .add-form label {
+  display: inline-block;
+  width: 5rem;
+  margin-bottom: 0.5rem;
+}
+.add-employee .add-form .add-btn {
+  display: inline-block;
+  margin: 1rem 2rem 1rem 0;
+}/*# sourceMappingURL=AddEmployee.css.map */

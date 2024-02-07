@@ -1,0 +1,26 @@
+@import "../../../styles/common";
+
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  td {
+    padding: 0.5rem;
+    border: 1px solid $bg-color;
+    text-align: left;
+    width: 33%;
+  }
+
+  th {
+    background-color: $bg-color;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem;
+    text-align: left;
+    width: 33%;
+  }
+
+  tr:hover {
+    background-color: rgb(146, 199, 207, 0.2);
+  }
+}

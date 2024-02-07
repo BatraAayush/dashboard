@@ -1,0 +1,22 @@
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.my-table td {
+  padding: 0.5rem;
+  border: 1px solid #59B4C3;
+  text-align: left;
+  width: 33%;
+}
+.my-table th {
+  background-color: #59B4C3;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem;
+  text-align: left;
+  width: 33%;
+}
+.my-table tr:hover {
+  background-color: rgba(146, 199, 207, 0.2);
+}/*# sourceMappingURL=EmployeesList.css.map */

@@ -1,0 +1,12 @@
+.chart-container {
+  margin: 0 10rem;
+}
+.chart-container .chart {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  .chart-container {
+    margin: 1rem;
+  }
+}/*# sourceMappingURL=EmployeesChart.css.map */
